@@ -47,8 +47,9 @@ PROXY_GETTER = [
 
 
 # # API config http://127.0.0.1:5010
-
+import os
+port = int(os.environ.get('PORT', 5000))
 SERVER_API = {
     "HOST": "0.0.0.0",  # The ip specified which starting the web API
-    "PORT": 5010  # port number to which the server listens to
+    "PORT": port  # port number to which the server listens to
 }
